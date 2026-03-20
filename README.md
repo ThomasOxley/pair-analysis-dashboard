@@ -182,7 +182,7 @@ The active ~ alpha + beta × tracking framework is the same structure used in th
 
 ## Academic Context
 
-This tool was developed as part of MSc Financial Technology research at Bristol Business School, University of the West of England (2024–2025), alongside companion repositories:
+This tool was developed as part of MSc Financial Technology research at Bristol Business School, University of the West of England (2025–2026), alongside companion repositories:
 - [`portfolio-optimisation-dashboard`](https://github.com/ThomasOxley/portfolio-optimisation-dashboard) — multi-asset portfolio construction and risk analytics
 - [`stock-screening-forecasting-dashboard`](https://github.com/ThomasOxley/stock-screening-forecasting-dashboard) — S&P 500 screening and price forecasting
 
