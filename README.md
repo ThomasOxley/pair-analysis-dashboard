@@ -2,7 +2,7 @@
 
 An interactive quantitative pair analysis dashboard built in Python for JupyterLab. Analyses two stocks side-by-side across correlation, lead/lag detection, rolling correlation, OLS expected return modelling, risk metrics, valuation, and spread z-score mean reversion signals — outputting a styled HTML recommendations panel with colour-coded trading signals.
 
-Built as part of MSc Financial Technology research at Bristol Business School, UWE (2024–2025).
+Built as part of MSc Financial Technology research at Bristol Business School, UWE (2025–2026).
 
 ---
 
