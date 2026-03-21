@@ -2,7 +2,7 @@
 
 An interactive quantitative pair analysis dashboard built in Python for JupyterLab. Analyses two stocks side-by-side across correlation, lead/lag detection, rolling correlation, OLS expected return modelling, risk metrics, valuation, and spread z-score mean reversion signals — outputting a styled HTML recommendations panel with colour-coded trading signals.
 
-Built as part of MSc Financial Technology research at Bristol Business School, UWE (2024–2025).
+Built as part of MSc Financial Technology research at Bristol Business School, UWE (2025–2026).
 
 ---
 
@@ -206,7 +206,7 @@ The active ~ alpha + beta × tracking framework is the same structure used in th
 
 ## Academic Context
 
-This tool was developed as part of MSc Financial Technology research at Bristol Business School, University of the West of England (2024–2025), alongside companion repositories:
+This tool was developed as part of MSc Financial Technology research at Bristol Business School, University of the West of England (2025–2026), alongside companion repositories:
 - [`portfolio-optimisation-dashboard`](https://github.com/ThomasOxley/portfolio-optimisation-dashboard) — multi-asset portfolio construction and risk analytics
 - [`stock-screening-forecasting-dashboard`](https://github.com/ThomasOxley/stock-screening-forecasting-dashboard) — S&P 500 screening and price forecasting
 
