@@ -2,7 +2,7 @@
 
 An interactive quantitative pair analysis dashboard built in Python for JupyterLab. Analyses two stocks side-by-side across correlation, lead/lag detection, rolling correlation, OLS expected return modelling, risk metrics, valuation, and spread z-score mean reversion signals — outputting a styled HTML recommendations panel with colour-coded trading signals.
 
-Built as part of MSc Financial Technology research at Bristol Business School, UWE (2025–2026).
+Built as part of MSc Financial Technology research at Bristol Business School, UWE (2024–2025).
 
 ---
 
@@ -65,7 +65,7 @@ All metrics are interval-aware — annualisation factor adjusts automatically fo
 - Fits: Active(t) = α + β × Tracking(t) + ε via ordinary least squares
 - Outputs: alpha, beta, R², expected return series, and residual series
 - Alpha interpretation: positive = active stock generating excess return above tracking
-- Latest residual signal: >1.5σ above = active outperforming model (watch for reversion); <1.5σ below = underperforming
+- Latest residual signal: >1.5σ above = active outperforming model; <1.5σ below = underperforming
 - Directly analogous to how active fund managers measure performance versus a benchmark
 
 ### Beta-Neutral Sizing
@@ -114,7 +114,31 @@ All charts use a consistent dark theme (IBM Plex Mono, dark background, annotate
 
 ## Screenshots
 
-*(Add screenshots here)*
+### Control Panel
+The full widget UI showing ticker inputs, date range, weekly timeframe, tracking/active designation, and configuration controls.
+
+![Control Panel](screenshots/Screenshot%202026-03-21%20at%2014.35.33.png)
+
+---
+
+### Metrics Summary Table
+Styled summary table showing annualised return, volatility, Sharpe, Sortino, max drawdown, and beta vs SPY for both AAPL and MSFT. AAPL: return 15.08%, Sharpe 0.50, beta 1.15. MSFT: return 11.20%, Sharpe 0.43, beta 0.97.
+
+![Metrics Summary Table](screenshots/Screenshot%202026-03-21%20at%2014.35.40.png)
+
+---
+
+### Trading Recommendations Panel
+The styled dark-theme HTML recommendations panel showing all eight signal sections — trend & momentum, relative strength, correlation regime, lead/lag, expected return model (MSFT ~ AAPL, alpha positive, R²=0.072), market sensitivity, valuation (MSFT P/E discount 24.0x vs 31.5x), and consolidated summary table.
+
+![Trading Recommendations Panel](screenshots/Screenshot%202026-03-21%20at%2014.36.02.png)
+
+---
+
+### Eight-Subplot Chart Output
+Full Plotly dashboard showing all eight analytical charts: normalised prices (MSFT outperforming AAPL over 3 years), log returns with volatility clustering, rolling correlation (window=60), cross-correlation bar chart with peak lag annotation, lagged scatter plot, drawdown comparison with −20% reference line, actual vs expected active return (OLS model overlay), and model residuals. Dark theme with IBM Plex Mono typography throughout.
+
+![Eight Subplot Chart Output](screenshots/Screenshot%202026-03-21%20at%2014.36.16.png)
 
 ---
 
@@ -182,7 +206,7 @@ The active ~ alpha + beta × tracking framework is the same structure used in th
 
 ## Academic Context
 
-This tool was developed as part of MSc Financial Technology research at Bristol Business School, University of the West of England (2025–2026), alongside companion repositories:
+This tool was developed as part of MSc Financial Technology research at Bristol Business School, University of the West of England (2024–2025), alongside companion repositories:
 - [`portfolio-optimisation-dashboard`](https://github.com/ThomasOxley/portfolio-optimisation-dashboard) — multi-asset portfolio construction and risk analytics
 - [`stock-screening-forecasting-dashboard`](https://github.com/ThomasOxley/stock-screening-forecasting-dashboard) — S&P 500 screening and price forecasting
 
@@ -196,6 +220,3 @@ This tool is an academic research project. All outputs are for educational and i
 
 *Thomas Oxley | MSc Financial Technology | Bristol Business School, UWE*
 *linkedin.com/in/thomas-oxley-868047174 | github.com/ThomasOxley*
-```
-
----
